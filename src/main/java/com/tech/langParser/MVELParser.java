@@ -18,4 +18,11 @@ public class MVELParser {
         }
         return false;
     }
+    public void parseMvelOutputExpression( String expression, Map<String, Object> inputObjects){
+        try {
+            MVEL.eval(expression,inputObjects);
+        }catch (Exception e){
+            log.error("Can not parse Mvel Expression : {} Error: {}", expression, e.getMessage());
+        }
+    }
 }

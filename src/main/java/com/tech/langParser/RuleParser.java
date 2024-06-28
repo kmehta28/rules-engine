@@ -52,7 +52,7 @@ public class RuleParser<INPUT_DATA, OUTPUT_RESULT> {
         Map<String, Object> input = new HashMap<>();
         input.put(INPUT_KEYWORD, inputData);
         input.put(OUTPUT_KEYWORD, outputResult);
-        mvelParser.parseMvelExpression(resolvedDslExpression, input);
+        mvelParser.parseMvelOutputExpression(resolvedDslExpression, input);
         return outputResult;
     }
 
