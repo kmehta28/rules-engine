@@ -5,7 +5,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
 import java.io.Serializable;
 
 @Data
@@ -24,7 +24,7 @@ public class RuleDbModel {
     @Column(name = "rule_id")
     private String ruleId;
 
-    @Column(name = "condition")
+    @Column(name = "rule_condition")
     private String condition;
 
     @Column(name = "action")
